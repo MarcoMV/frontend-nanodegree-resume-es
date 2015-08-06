@@ -1,64 +1,51 @@
 <!DOCTYPE html>
+<!-- Este es un documento HTML, contiene información de cómo esta organizado
+el sitio we. En otras palabras, describe el diseño(layout) de un sitio web.   -->
 
 <!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
-
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
--->
-
-<!--
-The <head> of a website generally links to important resources the page will
-need to load. You'll see a lot of <link>s to CSS files for styles and
-<scripts> for JavaScript files to build interactions.
+La etiqueta <head> de un "website" generalmente enlaza a los recursos importantes que la página necesita cargar. Tu verás un buen de <link>s para
+archivos CSS para estilos y <scripts> para archivos JavaScript para cargar interacciones
 -->
 <head>
-  <!-- This tells the browser how to read the document. -->
+  <!-- <meta charset="utf-8"> Esto le dice al navegador como leer el documento -->
   <meta charset="utf-8">
 
-  <!-- Tells the browser what the title of this page should be. -->
+  <!-- <title> Le dice al navegador el titulo de la pagina  -->
   <title>Resume</title>
 
-  <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet"> <!-- Carga los estilos de la pagina -->
 
   <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
+  JQuery es una biblioteca comun de JavaScript para leer y hacer cambios al  Document Object Model (DOM). DOM es un arbol que contiene información acerca de lo que actualmente es visible en el website
 
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
+  Mientras HTML es un documento estatico, el navegador convierte HTML al DOM y el DOM puede cambiar. De hecho, el poder de JS viene de la habilidad de manipular el DOM, el cual es esencialmente un objeto de JavaScript. 
+
+  Cuando JS hace algo interesante en un website es probable  que pasó porque JS cambió el DOM. JQuery es rápido y fácil de usar, pero no hace nada que no se puede lograr con la vainilla JavaScript (regular).
+
   -->
   <script src="js/jQuery.js"></script>
 
-  <!-- More on helper.js in the class -->
+  <!-- Aprende más en la clase sobre helper.js -->
   <script src="js/helper.js"></script>
 
   <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
+  Descomenta la etiqueta <script> debajo CUANDO ESTÉS LISTO(No tengas miedo) de agregar un mapa interactivo de Google
   -->
-<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
 
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
-
+    <!-- Tu borrarás esta línea en el curso-->
+    
     <!--
-    Everything from here to the <script> tag below is the skeleton of your
-    website. Your code will add information to each of the sections of the
-    resume below. You can pretty easily figure out what each section will
-    display by looking at the id or at what's written between the <h2> tags.
+    TTodo, desde aquí a la etiqueta <script> a continuación es el esqueleto de su sitio web.
+
+    Su código añadirá información para cada una de las secciones de la hoja de vida abajo.
+
+    Tú puedes calcular con bastante facilidad lo que cada sección mostrará mirando el id o a lo que está escrito entre las etiquetas <h2>.
     -->
     <div id="header" class="center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
@@ -84,33 +71,27 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   </div>
 
   <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
+  La siguiente linea le dice al browser(navegador) donde descargarg el archivo de JS que tu estarás escribiendo.
+  En resumeBuilder.js, tu estarás escribiendo código que construye la página dinamicamente cuando este website, index.html, es abierto.
   -->
   <script src="js/resumeBuilder.js"></script>
 
 
   <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
+  Estos scripts están escritos en JS. Estarás descomponiéndolos como parte de un concurso. Esencialmente, las siguientes lineas están checando si tu no haz cambiado cada sección de la hoja de vida. Si tu no haz hecho algún cambio a la sección, de hoja de vida,  entonces la parte de la hoja de vida no se mostrará. Más en el curso
   -->
 
   <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+  //¿Notaste como de repente hay JS dentro de un documento HTML?
+  // Tu puedes escribir JS dentro de etiquetas <script>
+  // Al final de tu JS, no olvides cerrar la etiqueta 
 
+    // Tu puedes comentar en JS con
 
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
+    //   2 slashes para todos los caracteres contenidos en una sola linea
 
     /*
-        an opening and closing set of slash asterisks for block comments.
+        Abrir y cerrar asteriscos como se muestra, esto puede ocupar muchas lineas
     */
 
 
